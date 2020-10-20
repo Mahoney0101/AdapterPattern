@@ -1,0 +1,18 @@
+@startuml
+
+    interface CoffeMachine {
+    }
+    class Coffee {
+    }
+    class Driver {
+    }
+    class Tea {
+    }
+    class TeaAdapter {
+    }
+
+  Coffee .up.|> CoffeMachine
+  TeaAdapter .up.|> CoffeMachine
+  TeaAdapter o-- Tea : tea
+
+@enduml
